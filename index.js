@@ -67,10 +67,15 @@ Having decremented the opponent's ship count, check if the number is still great
 - If yes, let the loop continue (do nothing) and switch to the other player
 */
 
-  let getPlayer2X;
-  let getPlayer2Y;
-  let getPlayer1X;
-  let getPlayer1Y;
+//coin toss to pick up a beginner
+let coin = Math.floor(Math.random() * 2 + 1);
+if (coin === 1) {
+  alert(`${player1.name}, you are starting the battle`);
+} else {
+  alert(`${player2.name}, you are starting the battle`);
+}
+/*
+  let getPlayer2X, getPlayer2Y, getPlayer1X, getPlayer1Y;
   while (player1.shipCount !== 0 && player2.shipCount !== 0)
     do {
       let getPlayer2X = prompt("Choose your `x` coordinate to strike.");//#1 player's turn
