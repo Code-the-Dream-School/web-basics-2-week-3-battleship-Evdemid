@@ -44,8 +44,7 @@ let coin = Math.floor(Math.random() * 2 + 1);
 if (coin !== 1) {
   currentPlayer = player2;
   opponent = player1;
-  alert(`${currentPlayer.name}, you are starting the battle`);
-  }
+}
 
 const battleship = () => {
   while (opponent.shipCount > 0) {
@@ -65,7 +64,7 @@ const battleship = () => {
     }
     [currentPlayer, opponent] = [opponent, currentPlayer];
   }
-  
+  return `${currentPlayer.name} you are the great naval commander!`;
 };
 
 const gameResult = battleship()
