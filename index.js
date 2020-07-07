@@ -64,7 +64,7 @@ const battleship = () => {
     }
     [currentPlayer, opponent] = [opponent, currentPlayer];
   }
-  return `${currentPlayer.name} you are the great naval commander!`;
+  return `${currentPlayer.name} you are the winner and the great naval commander!`;
 };
 
 const gameResult = battleship()
